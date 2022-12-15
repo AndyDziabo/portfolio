@@ -26,6 +26,8 @@ nav{
   align-items: center;
   justify-content: space-between;
   background-color: rgb(41, 68, 102);
+  min-height: 5vh;
+  color: white;
 }
 
 #navbar {
@@ -94,9 +96,9 @@ nav{
   /* display: flex; */
   /* justify-content: center; */
   height: 95vh;
-  overflow: hidden;
-  overflow-y: scroll;
-  width: 95vw;
+  /* overflow: hidden; */
+  /* overflow-y: scroll; */
+  width: 90vw;
   
 }
 
@@ -128,6 +130,22 @@ nav{
 
 .skills-items img {
   width: 8rem;
+}
+
+.projects {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.project-items {
+  width: 20%;
+}
+
+.project-items img {
+  width: 38rem;
 }
 
 @media screen and (max-width:769px) {

@@ -6,23 +6,23 @@ function Contact() {
 
     const sendEmail = (e) => {
       e.preventDefault();
-      
+
       if(e.target.user_name.value === ""){
         console.log("Must have name.")
       }else if(e.target.user_email.value === ""){
         console.log("Must have Email.")
-      }else if(/\S+@\S+.\S+/.test(e.target.user_email.value)){
+      }else if(!/\S+@\S+.\S+/.test(e.target.user_email.value)){
         console.log("Must be a valid Email.")
       }else if(e.target.message.value === ""){
         console.log("Must have message.")
       }else{
         console.log("send email")
-        //   emailjs.sendForm('service_5g1cmko', 'template_h42cuiw', form.current, 'u9NyyJilj9EpoYRK2')
-        //     .then((result) => {
-        //         console.log(result.text);
-        //     }, (error) => {
-        //         console.log(error.text);
-        //     });
+          emailjs.sendForm('service_5g1cmko', 'template_h42cuiw', form.current, 'u9NyyJilj9EpoYRK2')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
       }
     };
 
