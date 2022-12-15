@@ -18,7 +18,7 @@ code {
 }
 
 .main-container {
-  /* display: flex; */
+  display: flex;
 }
 
 nav{
@@ -72,9 +72,9 @@ nav{
 }
 
 .sidebar {
-  display: inline-block;
+  /* display: inline-block; */
   background-color: brown;
-  width: 3rem;
+  width: 5vw;
   height: 95vh;
 }
 
@@ -88,15 +88,15 @@ nav{
 }
 
 .main {
-  display: inline-block;
-  float: right;
+  /* display: inline; */
+  /* float: right; */
   background-color: aqua;
   /* display: flex; */
   /* justify-content: center; */
   height: 95vh;
   overflow: hidden;
   overflow-y: scroll;
-  width: 95%;
+  width: 95vw;
   
 }
 
@@ -112,6 +112,22 @@ nav{
   border-radius: 50%;
   box-shadow: 0 0 10px;
   
+}
+
+.skills {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.skills-items {
+  width: 20%;
+}
+
+.skills-items img {
+  width: 8rem;
 }
 
 @media screen and (max-width:769px) {
@@ -138,5 +154,11 @@ nav{
   }
   #navbar li {
     margin-bottom: 25px;
+  }
+  .sidebar {
+    width: 15vw;
+  }
+  .skills-items img {
+    width: 5rem;
   }
 }

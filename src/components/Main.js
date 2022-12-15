@@ -5,6 +5,7 @@ import reduxIcon from '../assets/Redux.png';
 import railsIcon from '../assets/rails.png';
 import postgresqlIcon from '../assets/postgresql.png';
 import bcryptIcon from '../assets/bcrypt.png';
+import Contact from './Contact';
 
 function Main(){
     return(
@@ -23,20 +24,31 @@ function Main(){
                 
             </div>
             <h1>Skills</h1>
-            <div>
-                <div>
+            <div className='skills'>
+                <div className='skills-items'>
                     <img src={reactIcon} alt='react' />
                 </div>
-                <div>
+                <div className='skills-items'>
                     <img src={reactRouterIcon} alt='react-router' />
                 </div>
-                <div>
-                    <img src={reactIcon} alt='react' />
+                <div className='skills-items'>
+                    <img src={reduxIcon} alt='redux' />
+                </div>
+            </div>
+            <div className='skills'>
+                <div className='skills-items'>
+                    <img src={railsIcon} alt='rails' />
+                </div>
+                <div className='skills-items'>
+                    <img src={postgresqlIcon} alt='postGreSql' />
+                </div>
+                <div className='skills-items'>
+                    <img src={bcryptIcon} alt='bcrypt' />
                 </div>
             </div>
             <h1>Contact Me</h1>
             <div>
-                
+                <Contact />
             </div>
         </div>
     )
