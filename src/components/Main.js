@@ -27,6 +27,12 @@ function Main(){
                 <div>
                     <img src={reactIcon} alt='react' />
                 </div>
+                <div>
+                    <img src={reactRouterIcon} alt='react-router' />
+                </div>
+                <div>
+                    <img src={reactIcon} alt='react' />
+                </div>
             </div>
             <h1>Contact Me</h1>
             <div>
