@@ -11,14 +11,14 @@ function NavBar(){
     return(
         <>
             <nav>
-                <h2>Andrew Dziabo</h2>
+                <h2 className='nav-logo'><a href="#home">Andrew Dziabo</a></h2>
                 <div>
                     <ul id="navbar" className={clicked ? '#navbar' : '#navbar active'}>
-                        <li><a href="main.js">about</a></li>
-                        <li><a href="main.js">projects</a></li>
-                        <li><a href="main.js">skills</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#skills">skills</a></li>
                         <li><a href="main.js">resume</a></li>
-                        <li><a href="main.js">contact</a></li>
+                        <li><a href="#contact">contact</a></li>
                     </ul>
                 </div>
                 <div id='mobile' onClick={handleClick}>

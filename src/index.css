@@ -50,6 +50,14 @@ nav{
   transition: 0.3s ease-in-out;
 }
 
+.nav-logo a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
 #navbar li a:hover{
   color: aqua;
 }
@@ -76,7 +84,7 @@ nav{
 .sidebar {
   /* display: inline-block; */
   background-color: brown;
-  width: 5vw;
+  width: 3vw;
   height: 95vh;
 }
 
@@ -97,8 +105,8 @@ nav{
   /* justify-content: center; */
   height: 95vh;
   /* overflow: hidden; */
-  /* overflow-y: scroll; */
-  width: 90vw;
+  overflow-y: scroll;
+  width: 97vw;
   
 }
 
@@ -141,11 +149,38 @@ nav{
 }
 
 .project-items {
-  width: 20%;
+  /* width: 15%; */
+  padding: 1rem 0;
+  /* background-color: rgb(235, 83, 83); */
 }
 
 .project-items img {
-  width: 38rem;
+  border-radius: 15px;
+  width: 30rem;
+}
+
+.Modal {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  right: 2rem;
+  bottom: 2rem;
+  background-color: papayawhip;
+  padding: 1rem;
+  box-shadow: 0 0 5px;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.845);
+}
+
+section {
+  height: 95vh;
 }
 
 @media screen and (max-width:769px) {
@@ -178,5 +213,15 @@ nav{
   }
   .skills-items img {
     width: 5rem;
+  }
+  .project-items img{
+    width: 20rem;
+  }
+  .Modal {
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.7rem;
   }
 }
