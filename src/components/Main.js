@@ -54,7 +54,7 @@ function Main(){
     return(
         <div className="main">
             <div id='home' className='profile-pic'>
-                <img src={profilePic} alt='profile picture' />
+                <img src={profilePic} alt='profile' />
                 <h2>Andrew Dziabo</h2>
             </div>
             <section id='about'>
@@ -85,18 +85,6 @@ function Main(){
                         <img src={weather} alt='weather-app' onClick={e => handleClick('weather')} />
                     </div>
                 </div>
-                <Modal
-                    isOpen={modalIsOpen}
-                    onAfterOpen={afterOpenModal}
-                    onRequestClose={closeModal}
-                    contentLabel="Adventure Game"
-                    className="Modal"
-                    overlayClassName="Overlay"
-                >
-                    <h2>{title}</h2>
-                    <button onClick={closeModal}>close</button>
-                    <div>I am a modal</div>
-                </Modal>
             </section>
             <section id='skills'>
                 <h1>Skills</h1>
@@ -129,6 +117,18 @@ function Main(){
                     <Contact />
                 </div>
             </section>
+            <Modal
+                isOpen={modalIsOpen}
+                onAfterOpen={afterOpenModal}
+                onRequestClose={closeModal}
+                contentLabel="Adventure Game"
+                className="Modal"
+                overlayClassName="Overlay"
+            >
+                <h2>{title}</h2>
+                <button onClick={closeModal}>close</button>
+                <div>I am a modal</div>
+            </Modal>
         </div>
     )
 }

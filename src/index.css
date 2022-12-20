@@ -42,7 +42,7 @@ nav{
   position: relative;
 }
 
-#navbar li a {
+.nav-item {
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: 600;
@@ -58,11 +58,12 @@ nav{
   transition: 0.3s ease-in-out;
 }
 
-#navbar li a:hover{
+.nav-item:hover{
   color: aqua;
+  cursor: pointer;
 }
 
-#navbar li a:hover::after {
+.nav-item:hover::after {
   content: "";
   width: 30%;
   height: 2px;
