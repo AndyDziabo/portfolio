@@ -28,6 +28,7 @@ nav{
   background-color: rgb(41, 68, 102);
   min-height: 5vh;
   color: white;
+  z-index: 4;
 }
 
 #navbar {
@@ -84,7 +85,7 @@ nav{
 
 .sidebar {
   /* display: inline-block; */
-  background-color: brown;
+  background-color: rgb(101, 101, 101);
   width: 3vw;
   height: 95vh;
 }
@@ -101,7 +102,7 @@ nav{
 .main {
   /* display: inline; */
   /* float: right; */
-  background-color: aqua;
+  background-color: rgb(101, 101, 101);
   /* display: flex; */
   /* justify-content: center; */
   height: 95vh;
@@ -109,6 +110,11 @@ nav{
   overflow-y: scroll;
   width: 97vw;
   
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .profile-pic {
@@ -126,7 +132,7 @@ nav{
 }
 
 .skills {
-  background-color: aliceblue;
+  background-color: rgb(101, 101, 101);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -141,24 +147,23 @@ nav{
   width: 8rem;
 }
 
-.projects {
+/* .projects {
   background-color: aliceblue;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-}
+  z-index: -1;
+} */
 
-.project-items {
-  /* width: 15%; */
+/* .project-items {
   padding: 1rem 0;
-  /* background-color: rgb(235, 83, 83); */
 }
 
 .project-items img {
   border-radius: 15px;
   width: 30rem;
-}
+} */
 
 .Modal {
   position: absolute;
@@ -178,10 +183,134 @@ nav{
   right: 0;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.845);
+  z-index: 5000;
 }
 
 section {
-  height: 95vh;
+  min-height: 95vh;
+}
+
+.hide {
+  display: none;
+}
+
+/* .swiper-container {
+  width: 100%;
+  background-color: brown;
+  height: 45vh;
+} */
+
+/* .mySwiper {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  z-index: -1;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(0, 255, 89);
+}
+
+.swiper-slide img {
+  display: block;
+  width: 50%;
+  
+}
+
+.swiper-button-next {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.269);
+  padding: 10vh 1vw;
+  color: black;
+  transition: 0.25s ease-in-out;
+}
+
+.swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.571);
+} */
+
+#projects {
+  /* background-color: aliceblue; */
+}
+
+.swiper {
+  width: 70vw;
+  min-height: 25vw;
+  /* position: absolute; */
+  /* left: 50%; */
+  /* top: 50%; */
+  /* margin-left: -150px; */
+  margin-top: 2rem;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-description-container {
+  background-color: aqua;
+  display: flex;
+}
+
+.swiper-slide img {
+  width: 50%;
+}
+
+.swiper-text {
+  /* background-color: rgba(76, 79, 79, 0.434); */
+  /* height: 15rem; */
+  padding: 0.5rem;
+}
+
+.swiper-list {
+  margin-left: 2rem;
+}
+
+.vid-link {
+  display: flex;
+  
+
+  /* background-color: azure; */
+  height: 11rem;
+  width: 100%;
+}
+
+.vid-link img {
+  border-style: solid;
+  border-width: 1px;
+  padding: 1px;
+  margin: 0 auto;
+  width: 50%;
+  cursor: pointer;
+}
+
+.form {
+  background-color: aqua;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 35%;
+  margin: 5rem auto;
+  /* display: flex; */
+}
+
+.form label {
+  display: block;
+  font-size: 1.3em;
+  /* padding: 0 1rem 0 3rem; */
+}
+
+.form input {
+  font-size: 1.5em;
+}
+
+.form textarea {
+  min-height: 20rem;
+  min-width: 40rem;
 }
 
 @media screen and (max-width:769px) {
@@ -191,13 +320,14 @@ section {
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
-    top: 90px;
+    top: 40px;
     right: -300px;
     width: 300px;
     height: 100vh;
     background: rgb(50, 69, 113);
     padding: 40px 0 0 10px;
     transition: 0.3s ease-in-out;
+    z-index: 3;
   }
   #navbar.active {
     right: 0px;
@@ -210,7 +340,7 @@ section {
     margin-bottom: 25px;
   }
   .sidebar {
-    width: 15vw;
+    width: 11vw;
   }
   .skills-items img {
     width: 5rem;
@@ -224,5 +354,39 @@ section {
     right: 1rem;
     bottom: 1rem;
     padding: 0.7rem;
+  }
+  .swiper {
+    width: 80vw;
+    min-height: 25vw;
+    margin-top: 0.5rem;
+  }
+  .swiper-slide img {
+    width: 90%;
+  }
+  .swiper-text {
+    /* background-color: rgba(76, 79, 79, 0.434); */
+    /* height: 15rem; */
+    padding: 0.1rem;
+    font-size: 0.9rem;
+  }
+  .swiper-description-container {
+    background-color: aqua;
+    display: inline;
+  }
+  .form {
+    width: 95%;
+    padding: 10px 2px;
+    margin: 0px;
+  }
+  .form label {
+    font-size: 0.9em;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+  }
+  .form input {
+    font-size: 1em;
+  }
+  .form textarea {
+    /* min-height: 20rem; */
+    min-width: 80vw;
   }
 }

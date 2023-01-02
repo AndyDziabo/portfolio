@@ -27,14 +27,24 @@ function Contact() {
     };
 
     return(
-        <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-            <label>Message</label>
+        <form className='form' ref={form} onSubmit={sendEmail}>
+          <div>
+            <div>
+              <label>Name</label>
+              <input type="text" name="user_name" />
+              <label>Email</label>
+              <input type="email" name="user_email" />
+            </div>
+          </div>
+          <div>
+            <div>
+              <label>Message</label>
+            </div>
             <textarea name="message" />
-            <input type="submit" value="Send" />
+            <div>
+              <input type="submit" value="Send" />
+            </div>
+          </div>
         </form>
     )
 }

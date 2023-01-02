@@ -1,10 +1,9 @@
 import Modal from 'react-modal';
-import {GiHamburgerMenu} from 'react-icons/gi';
-import {AiOutlineClose} from 'react-icons/ai';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { AiOutlineClose } from 'react-icons/ai';
 import { useState } from 'react';
 
 function NavBar(){
-    let subtitle;
     const [modalIsOpen, setIsOpen] = useState(false);
     const [clicked, setClicked] = useState(true);
 
@@ -18,7 +17,7 @@ function NavBar(){
     
       function afterOpenModal() {
         // references are now sync'd and can be accessed.
-        subtitle.style.color = '#f00';
+        // subtitle.style.color = '#f00';
       }
     
       function closeModal() {
@@ -28,9 +27,9 @@ function NavBar(){
     return(
         <>
             <nav>
-                <h2 className='nav-logo'><a href="#home">Andrew Dziabo</a></h2>
+                <h2 className='nav-logo'><a href="#about">Andrew Dziabo</a></h2>
                 <div>
-                    <ul id="navbar" className={clicked ? '#navbar' : '#navbar active'}>
+                    <ul id="navbar" className={clicked ? '#navbar' : '#navbar active'} onClick={() => setClicked(true)}>
                         <li><a className='nav-item' href="#about">about</a></li>
                         <li><a className='nav-item' href="#projects">projects</a></li>
                         <li><a className='nav-item' href="#skills">skills</a></li>
@@ -48,11 +47,11 @@ function NavBar(){
                 contentLabel="Adventure Game"
                 className="Modal"
                 overlayClassName="Overlay"
-            >
-                <h2>Resume</h2>
-                <button onClick={closeModal}>close</button>
-                <div>I am a modal</div>
-            </Modal>
+                >
+                    <h2>Resume</h2>
+                    <button onClick={closeModal}>close</button>
+                    <div>I am a modal</div>
+                </Modal>
             </nav>            
         </>
     )
