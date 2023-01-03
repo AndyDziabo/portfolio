@@ -26,7 +26,7 @@ code {
   height: 95vh;
   /* overflow: hidden; */
   overflow-y: scroll;
-  width: 97vw;  
+  width: 99vw;  
 }
 
 .main h1 {
@@ -144,17 +144,37 @@ nav{
 .sidebar {
   /* display: inline-block; */
   background-color: rgb(101, 101, 101);
-  width: 3vw;
+  width: 45px;
   height: 95vh;
 }
 
 .sidebar-top {
-  height: 70vh;
+  height: 63vh;
 }
 
-.sidebar-logo {
-  text-align: center;
+.sidebar-logo-container {
+  background-image: linear-gradient(to right bottom, #4b4b4b, #525252, #555555, #575757, #5a5a5a, #5e5e5e, #626262, #666666, #6c6c6c, #727272, #797979, #7f7f7f);
+  margin-left: 2px;
+  border-style: solid;
+  border-top-color: rgb(65, 65, 65);
+  border-left-color: rgb(65, 65, 65);
+  border-bottom-color: rgb(137, 137, 137);
+  border-right-color: rgb(137, 137, 137);
+  border-width: 1px;
+  border-radius: 5px;
+  padding-top: 0.7rem;
+} 
+
+.sidebar-logo a {
+  text-decoration: none;
+  color: black;
+  padding-left: 2px;
   font-size: 2em;
+  transition: 0.3s ease-in-out;
+}
+
+.sidebar-logo a:hover {
+  color: aqua;
 }
 
 
@@ -342,7 +362,10 @@ nav{
     margin-bottom: 25px;
   }
   .sidebar {
-    width: 11vw;
+    width: 45px;
+  }
+  .sidebar-logo a {
+    padding-left: 2px;
   }
   .skills-items img {
     width: 5rem;
