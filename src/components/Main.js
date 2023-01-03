@@ -7,11 +7,11 @@ import reduxIcon from '../assets/Redux.png';
 import railsIcon from '../assets/rails.png';
 import postgresqlIcon from '../assets/postgresql.png';
 import bcryptIcon from '../assets/bcrypt.png';
-import drift from '../assets/drift/drift_login.png';
-import game from '../assets/game/game_mainmenu.png';
-import football from '../assets/football/football_draft_select.png';
-import flatify from '../assets/flatify/flatify_main.png';
-import weather from '../assets/weather/weather_main.png';
+import drift from '../assets/drift/drift_world.png';
+import game from '../assets/game/game.png';
+import football from '../assets/football/football.png';
+import flatify from '../assets/flatify/flatify.png';
+import weather from '../assets/weather/weather.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/effect-cube";
@@ -59,25 +59,18 @@ function Main(){
     return(
         <div className="main">
             <section id='about'>
+
                 <h1>About Me</h1>
                 <div className='about-container'>
                     <div id='home' className='profile-pic'>
                         <img src={profilePic} alt='profile' />
                     </div>
-                    <div>
-                        <p>I'm a Full Stack Software Engineer with a passion for learning and a love of exploring new ideas and the unknown.
+                        <p className='about-desc'>I'm a Full Stack Software Engineer with a passion for learning and a love of exploring new ideas and the unknown.
                             I am a very hands on type of person who enjoys learning how to do anything that involves creating or building 
                             things. I've always been intrigued by how things work, when I was young I was the kid always tearing things apart 
                             to see how they work. I have a wide variety of hobbies from restoring an old Queen Anne style home, building cars, 
                             welding, drawing and other art, and even tattooing. All of my hobbies have a couple things in common that draw 
                             me to them. They all involve building and creating, planning, and problem solving.</p>
-                    </div>
-                    <div>
-                        <h2>My Personal Interests</h2>
-                        <p>
-
-                        </p>
-                    </div>
                 </div>
             </section>
             <section id='projects'>
@@ -107,7 +100,7 @@ function Main(){
                         <SwiperSlide>
                             <h2>Adventure Game</h2>
                             <div className='swiper-description-container'>
-                                <img src={require('../assets/game/game_mainmenu.png')} alt='adventure-game' />
+                                <img src={require('../assets/game/game.png')} alt='adventure-game' />
                                 <div className='swiper-text'>
                                     <p>Top down view adventure game with user login, new game, saved games, key settings and highscore features</p>
                                     <ul className='swiper-list'>
