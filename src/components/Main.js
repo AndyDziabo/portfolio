@@ -12,6 +12,11 @@ import game from '../assets/game/game.png';
 import football from '../assets/football/football.png';
 import flatify from '../assets/flatify/flatify.png';
 import weather from '../assets/weather/weather.png';
+
+import GameImages from './GameImages';
+import DriftImages from './DriftImages';
+import FlatifyImages from './FlatifyImages';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/effect-cube";
@@ -28,16 +33,20 @@ function Main(){
     
     const [modalIsOpen, setIsOpen] = useState(false);
     const [title, setTitle] = useState('');
+    const [imgArr, setImgArr] = useState([]);
 
     function handleClick(proj) {
         if(proj === 'game'){
             setTitle('Adventure Game');
+            setImgArr(GameImages);
         }else if(proj === 'drift'){
             setTitle("Drift World");
+            setImgArr(DriftImages);
         }else if(proj === 'football'){
             setTitle("Fantasy Football");
         }else if(proj === 'flatify'){
             setTitle("Flatify");
+            setImgArr(FlatifyImages);
         }else if(proj === 'weather'){
             setTitle("Weather App");
         }
@@ -266,7 +275,7 @@ function Main(){
                 className="Modal"
                 overlayClassName="Overlay"
             >
-                <Demo title={title} closeModal={closeModal} />
+                <Demo title={title} imgArr={imgArr} closeModal={closeModal} />
             </Modal>
         </div>
     )
