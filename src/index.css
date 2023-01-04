@@ -76,11 +76,14 @@ section {
 
 nav{
   display: flex;
+  border-bottom-color: #FFEECA;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(41, 68, 102);
+  background-color: #005099;
   min-height: 5vh;
-  color: white;
+  color: #FFEECA;
   z-index: 4;
 }
 
@@ -113,7 +116,7 @@ nav{
 }
 
 .nav-item:hover{
-  color: aqua;
+  color: #D6A319;
   cursor: pointer;
 }
 
@@ -121,7 +124,7 @@ nav{
   content: "";
   width: 30%;
   height: 2px;
-  background-color: aqua;
+  background-color: #D6A319;
   position: absolute;
   bottom: -4px;
   left: 20px;
@@ -149,7 +152,7 @@ nav{
 }
 
 .sidebar-top {
-  height: 63vh;
+  height: 70vh;
 }
 
 .sidebar-logo-container {
@@ -297,6 +300,21 @@ nav{
 
 
 /****************************************************************************/
+/* Demo Modal                                                               */
+/****************************************************************************/
+
+.demo-slide {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.demo-slide img {
+  width: 600px;
+  height: 500px;
+}
+
+/****************************************************************************/
 /* Contact Me section                                                       */
 /****************************************************************************/
 
@@ -363,6 +381,9 @@ nav{
   }
   .sidebar {
     width: 45px;
+  }
+  .sidebar-top {
+    height: 63vh;
   }
   .sidebar-logo a {
     padding-left: 2px;

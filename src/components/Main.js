@@ -20,6 +20,7 @@ import "swiper/css/pagination";
 import { EffectCube, Navigation, Pagination } from 'swiper';
 
 import Contact from './Contact';
+import Demo from './Demo';
 
 Modal.setAppElement(document.getElementById('root'));
 
@@ -261,13 +262,11 @@ function Main(){
                 isOpen={modalIsOpen}
                 onAfterOpen={afterOpenModal}
                 onRequestClose={closeModal}
-                contentLabel="Adventure Game"
+                contentLabel="Demo"
                 className="Modal"
                 overlayClassName="Overlay"
             >
-                <h2>{title}</h2>
-                <button onClick={closeModal}>close</button>
-                <div>I am a modal</div>
+                <Demo title={title} closeModal={closeModal} />
             </Modal>
         </div>
     )
