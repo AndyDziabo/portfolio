@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import SideBar from './SideBar';
 
 function Contact() {
     const form = useRef();
@@ -27,6 +28,8 @@ function Contact() {
     };
 
     return(
+      <div className='contact-container'>
+        <SideBar />
         <form className='form' ref={form} onSubmit={sendEmail}>
           <div>
             <div>
@@ -46,6 +49,7 @@ function Contact() {
             </div>
           </div>
         </form>
+      </div>
     )
 }
 

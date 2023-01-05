@@ -27,14 +27,14 @@ function NavBar(){
     return(
         <>
             <nav>
-                <h2 className='nav-logo'><a href="#about">Andrew Dziabo</a></h2>
+                <h2 className='nav-logo'><a href="#home">Andrew Dziabo</a></h2>
                 <div>
                     <ul id="navbar" className={clicked ? '#navbar' : '#navbar active'} onClick={() => setClicked(true)}>
                         <li><a className='nav-item' href="#about">about</a></li>
                         <li><a className='nav-item' href="#projects">projects</a></li>
-                        <li><a className='nav-item' href="#skills">skills</a></li>
-                        <li className='nav-item' onClick={openModal}>resume</li>
+                        {/* <li><a className='nav-item' href="#skills">skills</a></li> */}
                         <li><a className='nav-item' href="#contact">contact</a></li>
+                        <li className='nav-item' onClick={openModal}>resume</li>
                     </ul>
                 </div>
                 <div id='mobile' onClick={handleClick}>

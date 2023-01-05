@@ -5,17 +5,15 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: source sans pro,Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
 .main {
   /* display: inline; */
@@ -26,14 +24,27 @@ code {
   height: 95vh;
   /* overflow: hidden; */
   overflow-y: scroll;
-  width: 99vw;  
+  width: 100%;  
 }
 
 .main h1 {
+  font-size: 3.25rem;
+  font-weight: 300;
+  /* line-height: 0.5rem; */
   /* position: relative; */
-  width: 10ch;
+  width: fit-content;
   /* background-color: antiquewhite; */
   margin: 0 auto;
+  padding-bottom: 0.9rem;
+}
+
+.title-underline {
+  background-color: #005099;
+  width: 13ch;
+  height: 5px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  /* padding-bottom: 2rem; */
 }
 
 .main-container {
@@ -41,7 +52,9 @@ code {
 }
 
 section {
-  min-height: 95vh;
+  
+  padding-top: 5rem;
+  /* min-height: 95vh; */
 }
 
 .hide {
@@ -49,14 +62,16 @@ section {
 }
 
 .Modal {
+  color: white;
   position: absolute;
-  top: 2rem;
+  top: 0rem;
   left: 2rem;
   right: 2rem;
   bottom: 2rem;
-  background-color: papayawhip;
+  /* background-color: #0b0b0b; */
+  /* opacity: 0.8; */
   padding: 1rem;
-  box-shadow: 0 0 5px;
+  /* box-shadow: 0 0 5px; */
 }
 
 .Overlay {
@@ -65,8 +80,55 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.845);
+  background-color: #0b0b0bac;
+  /* opacity: 0.8; */
   z-index: 5000;
+}
+
+
+/****************************************************************************/
+/* Home Section                                                             */
+/****************************************************************************/
+
+#home {
+  padding-top: 0;
+  min-height: 95vh;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  /* background-color: aqua; */
+}
+
+#home h1 {
+  font-size: 4.5em;
+  font-weight: 900;
+  letter-spacing: .1em;
+  line-height: 1em;
+  text-transform: uppercase;
+  width: fit-content;
+  padding-bottom: 0;
+}
+
+.line {
+  background-color: #005099;
+  font-size: 4em;
+  width: 13ch;
+  height: 5px;
+  margin: 20px;
+}
+
+#home h4 {
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: .1em;
+  line-height: 1em;
+  text-transform: uppercase;
+  width: fit-content;
 }
 
 
@@ -76,14 +138,14 @@ section {
 
 nav{
   display: flex;
-  border-bottom-color: #FFEECA;
+  border-bottom-color: #65FBD2;
   border-bottom-style: solid;
   border-bottom-width: 2px;
   align-items: center;
   justify-content: space-between;
-  background-color: #005099;
+  background-color: #50C6D7;
   min-height: 5vh;
-  color: #FFEECA;
+  color: #65FBD2;
   z-index: 4;
 }
 
@@ -116,7 +178,7 @@ nav{
 }
 
 .nav-item:hover{
-  color: #D6A319;
+  color: #65FBD2;
   cursor: pointer;
 }
 
@@ -124,7 +186,7 @@ nav{
   content: "";
   width: 30%;
   height: 2px;
-  background-color: #D6A319;
+  background-color: #65FBD2;
   position: absolute;
   bottom: -4px;
   left: 20px;
@@ -141,62 +203,26 @@ nav{
 
 
 /****************************************************************************/
-/* Side Bar Styles                                                          */
-/****************************************************************************/
-
-.sidebar {
-  /* display: inline-block; */
-  background-color: rgb(101, 101, 101);
-  width: 45px;
-  height: 95vh;
-}
-
-.sidebar-top {
-  height: 70vh;
-}
-
-.sidebar-logo-container {
-  background-image: linear-gradient(to right bottom, #4b4b4b, #525252, #555555, #575757, #5a5a5a, #5e5e5e, #626262, #666666, #6c6c6c, #727272, #797979, #7f7f7f);
-  margin-left: 2px;
-  border-style: solid;
-  border-top-color: rgb(65, 65, 65);
-  border-left-color: rgb(65, 65, 65);
-  border-bottom-color: rgb(137, 137, 137);
-  border-right-color: rgb(137, 137, 137);
-  border-width: 1px;
-  border-radius: 5px;
-  padding-top: 0.7rem;
-} 
-
-.sidebar-logo a {
-  text-decoration: none;
-  color: black;
-  padding-left: 2px;
-  font-size: 2em;
-  transition: 0.3s ease-in-out;
-}
-
-.sidebar-logo a:hover {
-  color: aqua;
-}
-
-
-/****************************************************************************/
 /*About Section                                                             */
 /****************************************************************************/
 
 #about {
-  /* background-color: aquamarine; */
+  background-color: #7390A9;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  min-height: 65vh;
+  /* font-family: din_pro_medium; */
 }
 
 .about-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
 }
 
 .about-desc {
-  max-width: 60ch;
+  max-width: 70ch;
 }
 
 .profile-pic {
@@ -210,6 +236,7 @@ nav{
   max-width: 200px;
   border-radius: 50%;
   box-shadow: 0 0 10px;
+  margin-right: 2rem;
 }
 
 
@@ -218,7 +245,8 @@ nav{
 /****************************************************************************/
 
 #skills {
-  /* background-color: blue; */
+  background-color: #7390A9;
+  min-height: 95vh;
 }
 
 .skills {
@@ -243,7 +271,8 @@ nav{
 /****************************************************************************/
 
 #projects {
-  /* background-color: rgb(243, 11, 11); */
+  background-color: rgb(101, 101, 101);
+  min-height: 85vh;
 }
 
 .swiper {
@@ -263,7 +292,7 @@ nav{
 }
 
 .swiper-description-container {
-  background-color: aqua;
+  background-color: #7390A9;
   display: flex;
 }
 
@@ -303,15 +332,38 @@ nav{
 /* Demo Modal                                                               */
 /****************************************************************************/
 
+.demoSwiper{
+  margin-top: 0;
+  width: 100%;
+  /* background-color: white; */
+}
+
 .demo-slide {
   display: flex;
   justify-content: center;
   padding-top: 3rem;
 }
 
+.demo-modal-header {
+  background-color: #50C6D7;
+  display: inline-flex;
+  width: 100%;
+  height: 40px;
+}
+
+.demo-modal-header button {
+  position: absolute;
+  right: 0;
+  padding: 5px;
+  margin: 5px;
+}
+
 .demo-slide img {
-  width: 650px;
-  /* height: 400px; */
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 8px rgb(0 0 0 / 60%);
+  background: #444;
 }
 
 /****************************************************************************/
@@ -320,16 +372,22 @@ nav{
 
 #contact {
   /* background-color: green; */
+  min-height: 95vh;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
 }
 
 .form {
-  background-color: aqua;
+  background-color: #7390A9;
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;
   padding: 1rem;
   width: 35%;
-  margin: 5rem auto;
+  /* margin: 5rem auto; */
   /* display: flex; */
 }
 
@@ -346,6 +404,50 @@ nav{
 .form textarea {
   min-height: 20rem;
   min-width: 40rem;
+}
+
+
+/****************************************************************************/
+/* Side Bar Styles                                                          */
+/****************************************************************************/
+
+.sidebar {
+  /* display: inline-block; */
+  /* background-color: rgb(132, 21, 21); */
+  width: 60px;
+  /* height: 95vh; */
+}
+
+.sidebar-top {
+  height: 5px;
+}
+
+.sidebar-logo-container {
+  background-image: linear-gradient(to right bottom, #4b4b4b, #525252, #555555, #575757, #5a5a5a, #5e5e5e, #626262, #666666, #6c6c6c, #727272, #797979, #7f7f7f);
+  /* margin-left: 2px; */
+  /* margin-right: 2px; */
+  width: 45px;
+  border-style: solid;
+  border-top-color: rgb(65, 65, 65);
+  border-left-color: rgb(65, 65, 65);
+  border-bottom-color: rgb(137, 137, 137);
+  border-right-color: rgb(137, 137, 137);
+  border-width: 1px;
+  border-radius: 5px;
+  padding-top: 0.7rem;
+  padding-left: 3px;
+} 
+
+.sidebar-logo a {
+  text-decoration: none;
+  color: black;
+  padding-left: 2px;
+  font-size: 2em;
+  transition: 0.3s ease-in-out;
+}
+
+.sidebar-logo a:hover {
+  color: aqua;
 }
 
 

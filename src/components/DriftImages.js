@@ -29,14 +29,14 @@ export default [
         alt: "driftClassifieds"
     },
     {
-        img: classifiedForm,
-        title: "Classifieds Form",
-        alt: "driftClassifiedForm"
-    },
-    {
         img: add,
         title: "Classified Ad",
         alt: "driftAdd"
+    },
+    {
+        img: classifiedForm,
+        title: "Classifieds Form",
+        alt: "driftClassifiedForm"
     },
     {
         img: events,

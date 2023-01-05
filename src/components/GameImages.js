@@ -28,12 +28,12 @@ export default [
     },
     {
         img: gameNew,
-        title: "Create New Game",
+        title: "Create new Game",
         alt: "gameNew"
     },
     {
         img: gameSaved,
-        title: "Load Saved Game",
+        title: "Load saved Game",
         alt: "gameSaved"
     },
     {

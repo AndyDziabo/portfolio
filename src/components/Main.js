@@ -16,6 +16,8 @@ import weather from '../assets/weather/weather.png';
 import GameImages from './GameImages';
 import DriftImages from './DriftImages';
 import FlatifyImages from './FlatifyImages';
+import FootballImages from './FootballImages';
+import WeatherImages from './WeatherImages';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
@@ -26,6 +28,7 @@ import { EffectCube, Navigation, Pagination } from 'swiper';
 
 import Contact from './Contact';
 import Demo from './Demo';
+import SideBar from './SideBar';
 
 Modal.setAppElement(document.getElementById('root'));
 
@@ -44,11 +47,13 @@ function Main(){
             setImgArr(DriftImages);
         }else if(proj === 'football'){
             setTitle("Fantasy Football");
+            setImgArr(FootballImages);
         }else if(proj === 'flatify'){
             setTitle("Flatify");
             setImgArr(FlatifyImages);
         }else if(proj === 'weather'){
             setTitle("Weather App");
+            setImgArr(WeatherImages);
         }
         openModal();
     }
@@ -68,11 +73,23 @@ function Main(){
     
     return(
         <div className="main">
+            <section id="home">
+                <div>
+                    <h1>Andrew Dziabo</h1>
+                </div>
+                <div className='line'></div>
+                <div>
+                    <h4>Full Stack Software Engineer</h4>
+                </div>
+                
+
+            </section>
             <section id='about'>
 
                 <h1>About Me</h1>
+                <div className='title-underline'></div>
                 <div className='about-container'>
-                    <div id='home' className='profile-pic'>
+                    <div className='profile-pic'>
                         <img src={profilePic} alt='profile' />
                     </div>
                         <p className='about-desc'>I'm a Full Stack Software Engineer with a passion for learning and a love of exploring new ideas and the unknown.
@@ -80,11 +97,13 @@ function Main(){
                             things. I've always been intrigued by how things work, when I was young I was the kid always tearing things apart 
                             to see how they work. I have a wide variety of hobbies from restoring an old Queen Anne style home, building cars, 
                             welding, drawing and other art, and even tattooing. All of my hobbies have a couple things in common that draw 
-                            me to them. They all involve building and creating, planning, and problem solving.</p>
+                            me to them. They all involve building and creating, planning, and problem solving.
+                        </p>
                 </div>
             </section>
             <section id='projects'>
                 <h1>Projects</h1>
+                <div className='title-underline'></div>
                     <Swiper
                         // spaceBetween={30}
                         effect={"cube"}
@@ -236,8 +255,9 @@ function Main(){
                     </div>
                 </div> */}
             </section>
-            <section id='skills'>
+            {/* <section id='skills'>
                 <h1>Skills</h1>
+                <div className='title-underline'></div>
                 <div className='skills'>
                     <div className='skills-items'>
                         <img src={reactIcon} alt='react' />
@@ -260,9 +280,10 @@ function Main(){
                         <img src={bcryptIcon} alt='bcrypt' />
                     </div>
                 </div>
-            </section>
+            </section> */}
             <section id='contact'>
                 <h1>Contact Me</h1>
+                <div className='title-underline'></div>
                 <div>
                     <Contact />
                 </div>

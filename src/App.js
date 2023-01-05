@@ -7,7 +7,7 @@ function App() {
     <div >
       <NavBar />
       <div className="main-container">
-        <SideBar />
+        {/* <SideBar /> */}
         <Main />
       </div>
       
