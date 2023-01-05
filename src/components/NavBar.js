@@ -2,6 +2,7 @@ import Modal from 'react-modal';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
 import { useState } from 'react';
+import Resume from './Resume';
 
 function NavBar(){
     const [modalIsOpen, setIsOpen] = useState(false);
@@ -45,12 +46,10 @@ function NavBar(){
                 onAfterOpen={afterOpenModal}
                 onRequestClose={closeModal}
                 contentLabel="Adventure Game"
-                className="Modal"
-                overlayClassName="Overlay"
+                className="resume-modal"
+                overlayClassName="resume-overlay"
                 >
-                    <h2>Resume</h2>
-                    <button onClick={closeModal}>close</button>
-                    <div>I am a modal</div>
+                    <Resume closeModal={closeModal} />
                 </Modal>
             </nav>            
         </>

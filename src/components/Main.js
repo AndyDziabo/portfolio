@@ -62,11 +62,6 @@ function Main(){
       setIsOpen(true);
     }
   
-    function afterOpenModal() {
-      // references are now sync'd and can be accessed.
-    //   subtitle.style.color = '#f00';
-    }
-  
     function closeModal() {
       setIsOpen(false);
     }
@@ -290,7 +285,7 @@ function Main(){
             </section>
             <Modal
                 isOpen={modalIsOpen}
-                onAfterOpen={afterOpenModal}
+                // onAfterOpen={afterOpenModal}
                 onRequestClose={closeModal}
                 contentLabel="Demo"
                 className="Modal"
