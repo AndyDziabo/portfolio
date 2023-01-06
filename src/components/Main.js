@@ -1,4 +1,6 @@
 import Modal from 'react-modal';
+import Scrollbar from "react-scrollbars-custom";
+import { Link } from 'react-scroll';
 import { useState } from 'react';
 import profilePic from '../assets/profile.png';
 import reactIcon from '../assets/react.png';
@@ -67,7 +69,9 @@ function Main(){
     }
     
     return(
+
         <div className="main">
+            <Scrollbar noDefaultStyles className="card__scrollbar">
             <section id="home">
                 <div className='home-container'>
                 <div>
@@ -294,6 +298,7 @@ function Main(){
             >
                 <Demo title={title} imgArr={imgArr} closeModal={closeModal} />
             </Modal>
+            </Scrollbar>
         </div>
     )
 }

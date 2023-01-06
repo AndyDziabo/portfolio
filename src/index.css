@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: source sans pro,Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -13,7 +17,7 @@ body {
 .main {
   background-color: rgb(101, 101, 101);
   height: 95vh;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   width: 100%;  
 }
 
@@ -49,6 +53,39 @@ section {
 
 .hide {
   display: none;
+}
+
+
+/****************************************************************************/
+/* Scrollbar style                                                          */
+/****************************************************************************/
+
+.ScrollbarsCustom {
+  width: 100%;
+  height: 100%;
+}
+
+.ScrollbarsCustom .ScrollbarsCustom-Wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.ScrollbarsCustom .ScrollbarsCustom-TrackY {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.182);
+  right: 0;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.ScrollbarsCustom .ScrollbarsCustom-TrackY .ScrollbarsCustom-ThumbY {
+  background: rgb(150, 150, 150);
+  width: 10px;
+  border-radius: 5px;
+}
+
+.ScrollbarsCustom .ScrollbarsCustom-TrackY .ScrollbarsCustom-ThumbY:hover {
+  background: #50C6D7;
 }
 
 
@@ -138,10 +175,14 @@ nav{
   bottom: 2rem;
   background-color: #7390A9;
   border-radius: 15px;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   /* opacity: 0.8; */
   padding: 1rem;
   box-shadow: 0px 0px 18px 5px #000000;
+}
+
+.resume-modal:focus {
+  outline: none;
 }
 
 .resume-overlay {
@@ -185,7 +226,8 @@ nav{
 .resume {
   font-size: 1.3rem;
   width: 70vw;
-  margin: 1rem auto 10rem auto;
+  /* height: 95%; */
+  margin: 1rem auto 15rem auto;
 }
 
 .resume-header {
@@ -471,7 +513,7 @@ nav{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #0b0b0bac;
+  background-color: #0b0b0bbd;
   /* opacity: 0.8; */
   z-index: 5000;
 }
@@ -491,6 +533,11 @@ nav{
   width: 90%;
   height: 100%;
   /* background-color: #50C6D7; */
+}
+
+.demo-slide-container h2 {
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .demo-modal-header {
@@ -594,11 +641,19 @@ nav{
 
 .form input {
   font-size: 1.5em;
+  border-radius: 5px;
+  padding: 2px;
+  margin-top: 0.4rem;
+  margin-bottom: 1.5rem;
 }
 
 .form textarea {
+  font-size: 1.5em;
+  padding: 5px;
   min-height: 20rem;
-  min-width: 40rem;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 0.4rem;
 }
 
 
@@ -661,7 +716,7 @@ nav{
     right: -300px;
     width: 300px;
     height: 100vh;
-    background: rgb(50, 69, 113);
+    background: #38566C;
     padding: 40px 0 0 10px;
     transition: 0.3s ease-in-out;
     z-index: 3;

@@ -1,4 +1,8 @@
 import Modal from 'react-modal';
+import Scrollbar from 'react-scrollbars-custom';
+import * as Scroll from 'react-scroll';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
+import { CgCloseO } from 'react-icons/cg';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
 import { useState } from 'react';
@@ -49,7 +53,17 @@ function NavBar(){
                 className="resume-modal"
                 overlayClassName="resume-overlay"
                 >
-                    <Resume closeModal={closeModal} />
+                    <>
+                        <div className="resume-header">
+                            <a href={require("../assets/Dziabo_A_Resume.docx")} download="Dziabo_A_Resume">
+                            <button className='download-btn'>Download</button>
+                            </a>
+                            <CgCloseO className='close' onClick={closeModal} />
+                        </div>
+                        <Scrollbar noDefaultStyles className="card__scrollbar" style={{ width: "100%", height: "95%" }}>
+                            <Resume closeModal={closeModal} />
+                        </Scrollbar>
+                    </>
                 </Modal>
             </nav>            
         </>
