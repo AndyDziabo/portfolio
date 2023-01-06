@@ -1,3 +1,4 @@
+import { CgCloseO } from 'react-icons/cg';
 
 function Resume({ closeModal }) {
     
@@ -5,17 +6,25 @@ function Resume({ closeModal }) {
         <div className="resume">
             <div className="resume-header">
                 <a href={require("../assets/Dziabo_A_Resume.docx")} download="Dziabo_A_Resume">
-                <button>Download</button>
+                <button className='download-btn'>Download</button>
                 </a>
-                <button onClick={closeModal}>close</button>
+                <CgCloseO className='close' onClick={closeModal} />
             </div>
             <div className="resume-close">
                 
             </div>
             <div>
                 <h1 className="resume-name">Andrew Dziabo</h1>
-                <div className="resume-contact">Cresson, PA | 814-207-0577 | jameszabo@yahoo.com</div>
-                <div className="resume-contact"> LinkedIn | GitHub | Blog</div>
+                <div className="resume-contact">Cresson, PA | 814-207-0577 | 
+                    <span className="resume-email" onClick={(e) => {window.location.href ='mailto:jameszabo@yahoo.com';}}> jameszabo@yahoo.com</span>
+                </div>
+                <div className="resume-contact">
+                    <a href="https://www.linkedin.com/in/andrewdziabo/" target="_blank" rel="noopener noreferrer"> LinkedIn </a>
+                      | 
+                    <a href="https://github.com/AndyDziabo" target="_blank" rel="noopener noreferrer"> GitHub </a>
+                      | 
+                    <a href="https://dev.to/andydziabo" target="_blank" rel="noopener noreferrer"> Blog </a>
+                </div>
                 <br></br>
                 <h3 className="resume-section-title">SOFTWARE ENGINEER</h3>
                 <div className="resume-line"></div>

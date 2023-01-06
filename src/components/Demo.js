@@ -1,4 +1,4 @@
-
+import { CgCloseO } from 'react-icons/cg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/navigation";
@@ -22,24 +22,18 @@ function Demo({ title, imgArr, closeModal }) {
         >
             {imgArr.map((data) => 
                 <SwiperSlide className='demo-slide' key={data.alt}>
-                    <div>
+                    <div className='demo-slide-container'>
                         <h2>{title}</h2>
                         <div className='demo-modal-header'>
                             <h3>{data.title}</h3>
-                            <button onClick={closeModal}>close</button>
+                            <CgCloseO className='close' onClick={closeModal} />
                         </div>
-                        <img src={data.img} alt={data.alt} />
+                        <div className='demo-img-container'>
+                            <img src={data.img} alt={data.alt} />
+                        </div>
+                        
                     </div>
                 </SwiperSlide>)}
-            
-            {/* <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 5</SwiperSlide>
-            <SwiperSlide>Slide 6</SwiperSlide>
-            <SwiperSlide>Slide 7</SwiperSlide>
-            <SwiperSlide>Slide 8</SwiperSlide>
-            <SwiperSlide>Slide 9</SwiperSlide> */}
         </Swiper>
         </>
     )
