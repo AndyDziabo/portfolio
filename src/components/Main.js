@@ -69,6 +69,7 @@ function Main(){
     return(
         <div className="main">
             <section id="home">
+                <div className='home-container'>
                 <div>
                     <h1>Andrew Dziabo</h1>
                 </div>
@@ -76,7 +77,7 @@ function Main(){
                 <div>
                     <h4>Full Stack Software Engineer</h4>
                 </div>
-                
+                </div>
 
             </section>
             <section id='about'>

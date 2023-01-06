@@ -60,7 +60,7 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #9F8970;
+  background-color: #38566C;
   min-height: 5vh;
   color: white;
   z-index: 4;
@@ -88,19 +88,20 @@ nav{
 
 .nav-logo a {
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: white;
+  padding-left: 10px;
   transition: 0.2s ease-in-out;
 }
 
 .nav-logo a:hover {
-  color: #6B5740;
+  color: #50C6D7;
   cursor: pointer;
 }
 
 .nav-item:hover{
-  color: #6B5740;
+  color: #50C6D7;
   cursor: pointer;
 }
 
@@ -108,7 +109,7 @@ nav{
   content: "";
   width: 30%;
   height: 2px;
-  background-color: #6B5740;
+  background-color: #50C6D7;
   position: absolute;
   bottom: -4px;
   left: 20px;
@@ -294,9 +295,20 @@ nav{
 /****************************************************************************/
 
 #home {
+  background-image: url("./assets/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   padding-top: 0;
   min-height: 95vh;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+
+.home-container {
+  background-color: rgba(101, 101, 101, 0.97);
+  width: 100%;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
