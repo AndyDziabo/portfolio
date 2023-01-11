@@ -17,17 +17,13 @@ body {
 .main {
   background-color: rgb(101, 101, 101);
   height: 95vh;
-  /* overflow-y: scroll; */
   width: 100%;  
 }
 
 .main h1 {
   font-size: 3.25rem;
   font-family: monospace;
-  /* line-height: 0.5rem; */
-  /* position: relative; */
   width: fit-content;
-  /* background-color: antiquewhite; */
   margin: 0 auto;
   padding-bottom: 0.9rem;
 }
@@ -38,7 +34,6 @@ body {
   height: 5px;
   margin: 0 auto;
   margin-bottom: 2rem;
-  /* padding-bottom: 2rem; */
 }
 
 .main-container {
@@ -46,9 +41,7 @@ body {
 }
 
 section {
-  
   padding-top: 5rem;
-  /* min-height: 95vh; */
 }
 
 .hide {
@@ -175,8 +168,6 @@ nav{
   bottom: 2rem;
   background-color: #7390A9;
   border-radius: 15px;
-  /* overflow-y: scroll; */
-  /* opacity: 0.8; */
   padding: 1rem;
   box-shadow: 0px 0px 18px 5px #000000;
 }
@@ -192,7 +183,6 @@ nav{
   right: 0;
   bottom: 0;
   background-color: #0b0b0bac;
-  /* opacity: 0.8; */
   z-index: 5000;
 }
 
@@ -226,18 +216,15 @@ nav{
 .resume {
   font-size: 1.3rem;
   width: 70vw;
-  /* height: 95%; */
   margin: 1rem auto 15rem auto;
 }
 
 .resume-header {
-  /* background-color: wheat; */
   display: flex;
   justify-content: space-between;
 }
 
 .resume-close {
-  /* position: relative; */
   float: right;  
 }
 
@@ -318,6 +305,20 @@ nav{
   align-items: center;
 }
 
+.proj-title a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: 0.2s ease-in-out;
+}
+
+.proj-title a:hover {
+  color: #50C6D7;
+  cursor: pointer;
+}
+
 .proj-title h3 {
   padding-right: 0.2rem;
 }
@@ -348,17 +349,13 @@ nav{
 }
 
 .home-container {
-  background-color: rgba(101, 101, 101, 0.97);
+  background-color: rgba(101, 101, 101, 0.94);
   width: 100%;
   min-height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.home {
-  /* background-color: aqua; */
 }
 
 #home h1 {
@@ -399,7 +396,6 @@ nav{
   font-size: 1.4rem;
   line-height: 2.1rem;
   min-height: 65vh;
-  /* font-family: din_pro_medium; */
 }
 
 .about-container {
@@ -413,14 +409,7 @@ nav{
   max-width: 70ch;
 }
 
-.profile-pic {
-  /* background-color: beige; */
-  /* width: min-content;   */
-  /* margin: 2rem auto; */
-}
-
 .profile-pic img {
-  /* width: 15em; */
   max-width: 200px;
   border-radius: 50%;
   box-shadow: 0 0 10px;
@@ -438,13 +427,8 @@ nav{
 }
 
 .swiper {
-  /* background-color: brown; */
   width: 70vw;
   min-height: 25vw;
-  /* position: absolute; */
-  /* left: 50%; */
-  /* top: 50%; */
-  /* margin-left: -150px; */
   margin-top: 2rem;
 }
 
@@ -455,38 +439,40 @@ nav{
 
 .swiper-description-container {
   background-color: #7390A9;
+  border-radius: 10px;
   display: flex;
 }
 
 .swiper-slide img {
+  border-radius: 10px;
   width: 400px;
   height: 400px;
 }
 
 .swiper-text {
-  /* background-color: rgba(76, 79, 79, 0.434); */
-  /* height: 15rem; */
   padding: 0.5rem;
+}
+
+.swiper-text h3 {
+  padding-top: 0.5rem;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .swiper-list {
   margin-left: 2rem;
 }
 
-.vid-link {
-  display: flex;
-  /* background-color: azure; */
-  height: 11rem;
-  width: 100%;
+.demo-link {
+  background-color: white;
+  width: fit-content;
+  margin: 15px auto;
+  padding: 0px 10px 10px 10px;
+  border-radius: 5px;
 }
 
-.vid-link img {
-  border-style: solid;
-  border-width: 1px;
-  padding: 1px;
-  margin: 0 auto;
-  height: 200px;
-  cursor: pointer;
+.demo-link:hover {
+  background-color: #50C6D7;
 }
 
 
@@ -501,10 +487,11 @@ nav{
   left: 2rem;
   right: 2rem;
   bottom: 2rem;
-  /* background-color: #0b0b0b; */
-  /* opacity: 0.8; */
   padding: 1rem;
-  /* box-shadow: 0 0 5px; */
+}
+
+.Modal:focus {
+  outline: none;
 }
 
 .Overlay {
@@ -514,14 +501,16 @@ nav{
   right: 0;
   bottom: 0;
   background-color: #0b0b0bbd;
-  /* opacity: 0.8; */
   z-index: 5000;
 }
 
-.demoSwiper{
+.video {
+  border-radius: 10px;
+}
+
+.demoSwiper {
   margin-top: 0px;
   width: 100%;
-  /* background-color: rgb(112, 111, 111); */
 }
 
 .demo-slide {
@@ -532,7 +521,7 @@ nav{
 .demo-slide-container {
   width: 90%;
   height: 100%;
-  /* background-color: #50C6D7; */
+  margin: 0 auto;
 }
 
 .demo-slide-container h2 {
@@ -561,7 +550,6 @@ nav{
 
 .demo-img-container {
   width: 100%;
-  /* height: 100%; */
   background-color: rgb(101, 101, 101);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -577,8 +565,6 @@ nav{
   border-radius: 9px;
   height: auto;
   box-shadow: 0px 0px 15px 5px #00000057;
-  /* background: #444; */
-  
 }
 
 
@@ -592,7 +578,6 @@ nav{
 }
 
 .skills {
-  /* background-color: rgb(101, 101, 101); */
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -613,7 +598,6 @@ nav{
 /****************************************************************************/
 
 #contact {
-  /* background-color: green; */
   min-height: 95vh;
 }
 
@@ -624,19 +608,14 @@ nav{
 
 .form {
   background-color: #7390A9;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 1rem;
   width: 35%;
-  /* margin: 5rem auto; */
-  /* display: flex; */
 }
 
 .form label {
   display: block;
   font-size: 1.3em;
-  /* padding: 0 1rem 0 3rem; */
 }
 
 .form input {
@@ -656,16 +635,64 @@ nav{
   margin-top: 0.4rem;
 }
 
+.send-btn {
+  padding: 5px 8px;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  color: #7390A9;
+  border-radius: 7px;
+  border-color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.send-btn:hover {
+  color: white;
+  background-color: #50C6D7;
+  cursor: pointer;
+}
+
+.sending {
+  width: 11ch;
+  background-color: #50C6D7;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  color: white;
+  border-radius: 7px;
+  border-color: white;
+}
+
+.sending:focus {
+  outline: none;
+}
+
+.sent {
+  padding: 1.2rem;
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #50C6D7;
+  border-radius: 10px;
+}
+
+.error {
+  background-color: rgb(91, 91, 91);
+  padding: 2px 5px 2px 5px;
+  border-radius: 5px;
+  color: red;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 
 /****************************************************************************/
 /* Side Bar Styles                                                          */
 /****************************************************************************/
 
 .sidebar {
-  /* display: inline-block; */
-  /* background-color: rgb(132, 21, 21); */
   width: 60px;
-  /* height: 95vh; */
 }
 
 .sidebar-top {
@@ -674,8 +701,6 @@ nav{
 
 .sidebar-logo-container {
   background-image: linear-gradient(to right bottom, #4b4b4b, #525252, #555555, #575757, #5a5a5a, #5e5e5e, #626262, #666666, #6c6c6c, #727272, #797979, #7f7f7f);
-  /* margin-left: 2px; */
-  /* margin-right: 2px; */
   width: 45px;
   border-style: solid;
   border-top-color: rgb(65, 65, 65);
@@ -697,7 +722,7 @@ nav{
 }
 
 .sidebar-logo a:hover {
-  color: aqua;
+  color: #50C6D7;
 }
 
 
@@ -706,6 +731,27 @@ nav{
 /****************************************************************************/
 
 @media screen and (max-width:769px) {
+  section {
+    padding-top: 0.5rem;
+  }
+  .main {
+    height: 95vh; 
+  }
+  .main h1 {
+    font-size: 1.25rem;
+    padding-bottom: 0rem;
+    line-height: 1.3rem;
+  }
+  .title-underline {
+    background-color: #50C6D7;
+    width: 6ch;
+    height: 2px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  nav{
+    min-height: 5vh;
+  }
   #navbar {
     display: flex;
     flex-direction: column;
@@ -724,12 +770,89 @@ nav{
   #navbar.active {
     right: 0px;
   }
+  .nav-logo a {
+    font-size: 1rem;
+    font-weight: 500;
+  }
   #mobile {
     display: block;
     cursor: pointer;
   }
   #navbar li {
     margin-bottom: 25px;
+  }
+  .resume-modal {
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.3rem;
+  }
+  .download-btn {
+    padding: 2px 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0rem;
+    margin-bottom: 0.5rem;
+  }
+  .close {
+    font-size: 1.5rem;
+    margin-right: 0.7rem;
+  }
+  .resume {
+    font-size: 1rem;
+    width: 80vw;
+  }
+  .resume-name {
+    font-size: 1.5rem;
+    letter-spacing: .1em;
+    line-height: 1.5em;
+  }
+  .resume-contact {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0em;
+    line-height: 1.3em;
+    margin: 0 auto 1rem auto;
+  }
+  .resume-contact a {
+    font-size: 1rem;
+  }
+  .resume-section-title {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 1rem;
+  }
+  .resume-line {
+    height: 2px;
+  }
+  .proj-title h3 {
+    font-size: 1rem;
+  }
+  #home h1 {
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 0.2em;
+  }
+  .line {
+    font-size: 1.2em;
+    width: 13ch;
+    height: 2px;
+  }
+  #home h4 {
+    font-size: 1em;
+    letter-spacing: 0em;
+    line-height: 0.2em;
+  }
+  #about {
+    font-size: 1rem;
+    line-height: 1.1rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-bottom: 4rem;
+  }
+  .about-container {
+    flex-direction: column;
   }
   .sidebar {
     width: 45px;
@@ -748,32 +871,49 @@ nav{
   }
   .Modal {
     top: 1rem;
-    left: 1rem;
-    right: 1rem;
+    left: 0rem;
+    right: 0rem;
     bottom: 1rem;
-    padding: 0.7rem;
+    padding: 0rem;
+  }
+  .demo-slide-container {
+    width: 100%;
   }
   .swiper {
     width: 80vw;
-    min-height: 25vw;
-    margin-top: 0.5rem;
+    margin-top: 0rem;
   }
   .swiper-slide img {
     width: 200px;
     height: 200px;
+    margin: 0 auto;
   }
   .swiper-text {
-    /* background-color: rgba(76, 79, 79, 0.434); */
-    /* height: 15rem; */
     padding: 0.1rem;
     font-size: 0.9rem;
   }
   .swiper-description-container {
-    background-color: aqua;
-    display: inline;
+    flex-direction: column;
+  }
+    .vid-link {
+    display: flex;
+    height: 11rem;
+    width: 100%;
   }
   .vid-link img {
-    height: 100px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px;
+    margin: 0 auto;
+    height: 200px;
+    cursor: pointer;
+  }
+  #contact {
+    margin-top: 2rem;
+  }
+    .contact-container {
+    flex-direction: column;
+    justify-content: center;
   }
   .form {
     width: 95%;
@@ -788,7 +928,27 @@ nav{
     font-size: 1em;
   }
   .form textarea {
-    /* min-height: 20rem; */
     min-width: 80vw;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .sidebar-top {
+    display: none;
+  }
+  .sidebar-logo-container {
+    display: flex;
+    width: fit-content;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  } 
+  .form {
+    padding: 0.5rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
   }
 }

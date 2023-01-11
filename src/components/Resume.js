@@ -1,6 +1,5 @@
-import { CgCloseO } from 'react-icons/cg';
 
-function Resume({ closeModal }) {
+function Resume() {
     
     return(
         <div className="resume">
@@ -29,7 +28,7 @@ function Resume({ closeModal }) {
             <br></br>
             <h3 className="resume-section-title">TECHNICAL PROJECTS</h3>
             <div className="resume-line"></div>
-            <div className="proj-title"><h3>Adventure Game</h3> - GitHub</div>
+            <div className="proj-title"><h3>Adventure Game</h3> - <a href="https://github.com/AndyDziabo/the-adventure-game" target="_blank" rel="noopener noreferrer">GitHub</a></div>
             <p>Top down view adventure game with user login, new game, saved games, key settings and highscore features.</p>
             <ul>
                 <li>Full-stack project with a React frontend and a Rails backend</li>
@@ -39,7 +38,7 @@ function Resume({ closeModal }) {
                 <li>Custom CSS for character movement and animation</li>
             </ul>
             <br></br>
-            <div className="proj-title"><h3>Drift World</h3> - GitHub</div>
+            <div className="proj-title"><h3>Drift World</h3> - <a href="https://github.com/AndyDziabo/drift-world" target="_blank" rel="noopener noreferrer">GitHub</a></div>
             <p>Social app for the drifting community that provides: classifieds, events, services, and media sections.</p>
             <ul>
                 <li>Full-stack project with a React frontend and a Rails backend</li>
@@ -49,7 +48,10 @@ function Resume({ closeModal }) {
                 <li>User access to edit and delete resources only if they are the creator of that resource</li>
             </ul>
             <br></br>
-            <div className="proj-title"><h3>Fantasy Football</h3> - GitHub - Frontend - Backend</div>
+            <div className="proj-title"><h3>Fantasy Football</h3> - GitHub - 
+                <a href="https://github.com/AndyDziabo/phase-3-project-frontend" target="_blank" rel="noopener noreferrer">Frontend</a> - 
+                <a href="https://github.com/AndyDziabo/phase-3-sinatra-react-project" target="_blank" rel="noopener noreferrer">Backend</a>
+            </div>
             <p>A fantasy football app that lets you sign up the users in your league, run a draft, and then manage your team. </p>
             <ul>
                 <li>Using ESPN API to seed the database with all the current NFL players with their information</li>

@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from 'swiper';
 
-function Demo({ title, imgArr, closeModal }) {
+function Demo({ title, imgArr, demoSelect, closeModal }) {
 
     return(
         <>

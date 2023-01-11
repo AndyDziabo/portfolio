@@ -1,7 +1,5 @@
 import Modal from 'react-modal';
 import Scrollbar from 'react-scrollbars-custom';
-import * as Scroll from 'react-scroll';
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
 import { CgCloseO } from 'react-icons/cg';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -22,7 +20,6 @@ function NavBar(){
     
       function afterOpenModal() {
         // references are now sync'd and can be accessed.
-        // subtitle.style.color = '#f00';
       }
     
       function closeModal() {
@@ -61,7 +58,7 @@ function NavBar(){
                             <CgCloseO className='close' onClick={closeModal} />
                         </div>
                         <Scrollbar noDefaultStyles className="card__scrollbar" style={{ width: "100%", height: "95%" }}>
-                            <Resume closeModal={closeModal} />
+                            <Resume />
                         </Scrollbar>
                     </>
                 </Modal>
