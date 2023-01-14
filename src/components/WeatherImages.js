@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import enter from '../assets/weather/weather_enter.png';
 import main from '../assets/weather/weather_main.png';
 import forecast from '../assets/weather/weather_forecast.png';

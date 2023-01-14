@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import gameMenu from '../assets/game/game_gamemenu.png';
 import gameInventory from '../assets/game/game_inventory.png';
 import gameLogin from '../assets/game/game_login.png';

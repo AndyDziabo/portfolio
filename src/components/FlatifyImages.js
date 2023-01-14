@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import main from '../assets/flatify/flatify_main.png';
 import search from '../assets/flatify/flatify_search.png';
 import songs from '../assets/flatify/flatify_songs.png';

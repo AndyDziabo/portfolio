@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import accountEdit from '../assets/drift/drift_account_edit.png';
 import account from '../assets/drift/drift_account.png';
 import add from '../assets/drift/drift_add.png';

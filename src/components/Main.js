@@ -2,12 +2,12 @@ import Modal from 'react-modal';
 import Scrollbar from "react-scrollbars-custom";
 import { useState } from 'react';
 import profilePic from '../assets/profile.png';
-import reactIcon from '../assets/react.png';
-import reactRouterIcon from '../assets/react-router.png';
-import reduxIcon from '../assets/Redux.png';
-import railsIcon from '../assets/rails.png';
-import postgresqlIcon from '../assets/postgresql.png';
-import bcryptIcon from '../assets/bcrypt.png';
+// import reactIcon from '../assets/react.png';
+// import reactRouterIcon from '../assets/react-router.png';
+// import reduxIcon from '../assets/Redux.png';
+// import railsIcon from '../assets/rails.png';
+// import postgresqlIcon from '../assets/postgresql.png';
+// import bcryptIcon from '../assets/bcrypt.png';
 
 
 import GameImages from './GameImages';
