@@ -6,8 +6,13 @@ function App() {
   const [target, setTarget] = useState('');
   return (
     <div id='app' >
-      <NavBar setTarget={setTarget} />
-      <Main target={target} /> 
+      <div className='nav-container'>
+        <NavBar setTarget={setTarget} />
+      </div>
+      <div className='main-container'>
+        <Main target={target} />
+      </div>
+       
     </div>
   );
 }

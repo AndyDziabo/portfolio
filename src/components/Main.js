@@ -46,13 +46,13 @@ function Main({ target }){
     console.log(target)
 
     if(target === 'about') {
-        about.current.scrollTo();
+        about.current.scrollIntoView({behavior: "smooth"});
     }else if(target === 'projects'){
-        projects.current.scrollIntoView();
+        projects.current.scrollIntoView({behavior: "smooth"});
     }else if(target === 'contact'){
-        contact.current.scrollIntoView();
+        contact.current.scrollIntoView({behavior: "smooth"});
     }else if(target === 'home'){
-        home.current.scrollIntoView();
+        home.current.scrollIntoView({behavior: "smooth"});
     }
 
     function handleScreenClick(proj) {
