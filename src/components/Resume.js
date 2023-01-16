@@ -48,9 +48,12 @@ function Resume() {
                 <li>User access to edit and delete resources only if they are the creator of that resource</li>
             </ul>
             <br></br>
-            <div className="proj-title"><h3>Fantasy Football</h3> - GitHub - 
+            <div className="proj-title"><h3>Fantasy Football</h3>
+                <div> - GitHub - </div> 
+                <div>
                 <a href="https://github.com/AndyDziabo/phase-3-project-frontend" target="_blank" rel="noopener noreferrer">Frontend</a> - 
                 <a href="https://github.com/AndyDziabo/phase-3-sinatra-react-project" target="_blank" rel="noopener noreferrer">Backend</a>
+                </div>
             </div>
             <p>A fantasy football app that lets you sign up the users in your league, run a draft, and then manage your team. </p>
             <ul>

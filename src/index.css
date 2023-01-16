@@ -826,6 +826,9 @@ nav{
   .resume-line {
     height: 2px;
   }
+  .proj-title {
+    flex-direction: column;
+  }
   .proj-title h3 {
     font-size: 1rem;
   }
