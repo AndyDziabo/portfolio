@@ -116,7 +116,7 @@ nav{
   transition: 0.2s ease-in-out;
 }
 
-.nav-logo a {
+.nav-logo {
   text-decoration: none;
   font-size: 1.8rem;
   font-weight: 600;
@@ -125,7 +125,7 @@ nav{
   transition: 0.2s ease-in-out;
 }
 
-.nav-logo a:hover {
+.nav-logo:hover {
   color: #50C6D7;
   cursor: pointer;
 }
@@ -771,7 +771,7 @@ nav{
   #navbar.active {
     right: 0px;
   }
-  .nav-logo a {
+  .nav-logo {
     font-size: 1rem;
     font-weight: 500;
   }

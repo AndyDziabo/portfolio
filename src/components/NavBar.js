@@ -6,7 +6,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { useState } from 'react';
 import Resume from './Resume';
 
-function NavBar(){
+function NavBar({ setTarget }){
     const [modalIsOpen, setIsOpen] = useState(false);
     const [clicked, setClicked] = useState(true);
 
@@ -26,16 +26,20 @@ function NavBar(){
         setIsOpen(false);
       }
 
+      function targetScroll(link) {
+        setTarget(link);
+      }
+
     return(
         <>
             <nav>
-                <h2 className='nav-logo'><a href="/#home">Andrew Dziabo</a></h2>
+                <h2 className='nav-logo' onClick={() => targetScroll('home')}>Andrew Dziabo</h2>
                 <div>
                     <ul id="navbar" className={clicked ? '#navbar' : '#navbar active'} onClick={() => setClicked(true)}>
-                        <li><a className='nav-item' href="/#about">about</a></li>
-                        <li><a className='nav-item' href="/#projects">projects</a></li>
+                        <li className='nav-item' onClick={() => targetScroll('about')}>about</li>
+                        <li className='nav-item' onClick={() => targetScroll('projects')}>projects</li>
                         {/* <li><a className='nav-item' href="#skills">skills</a></li> */}
-                        <li><a className='nav-item' href="/#contact">contact</a></li>
+                        <li className='nav-item' onClick={() => targetScroll('contact')}>contact</li>
                         <li className='nav-item' onClick={openModal}>resume</li>
                     </ul>
                 </div>

@@ -2,6 +2,7 @@ import Modal from 'react-modal';
 import Scrollbar from "react-scrollbars-custom";
 import { useState } from 'react';
 import profilePic from '../assets/profile.png';
+import { useRef } from 'react';
 // import reactIcon from '../assets/react.png';
 // import reactRouterIcon from '../assets/react-router.png';
 // import reduxIcon from '../assets/Redux.png';
@@ -30,13 +31,29 @@ import Video from './Video';
 
 Modal.setAppElement(document.getElementById('root'));
 
-function Main(){
+function Main({ target }){
     
     const [modalIsOpen, setIsOpen] = useState(false);
     const [demoSelect, setDemoSelect] = useState(false);
     const [title, setTitle] = useState('');
     const [imgArr, setImgArr] = useState([]);
     const [demoObj, setDemoObj] = useState({});
+    const home = useRef(null);
+    const about = useRef(null);
+    const projects = useRef(null);
+    const contact = useRef(null);
+
+    console.log(target)
+
+    if(target === 'about') {
+        about.current.scrollTo();
+    }else if(target === 'projects'){
+        projects.current.scrollIntoView();
+    }else if(target === 'contact'){
+        contact.current.scrollIntoView();
+    }else if(target === 'home'){
+        home.current.scrollIntoView();
+    }
 
     function handleScreenClick(proj) {
         if(proj === 'game'){
@@ -100,7 +117,7 @@ function Main(){
 
         <div className="main">
             <Scrollbar noDefaultStyles className="card__scrollbar">
-            <section id="home">
+            <section ref={home} id="home">
                 <div className='home-container'>
                 <div>
                     <h1>Andrew Dziabo</h1>
@@ -112,7 +129,7 @@ function Main(){
                 </div>
 
             </section>
-            <section id='about'>
+            <section ref={about} id='about'>
 
                 <h1>About Me</h1>
                 <div className='title-underline'></div>
@@ -129,7 +146,7 @@ function Main(){
                         </p>
                 </div>
             </section>
-            <section id='projects'>
+            <section ref={projects} id='projects'>
                 <h1>Projects</h1>
                 <div className='title-underline'></div>
                 <Swiper
@@ -290,7 +307,7 @@ function Main(){
                     </div>
                 </div>
             </section> */}
-            <section id='contact'>
+            <section ref={contact} id='contact'>
                 <h1>Contact Me</h1>
                 <div className='title-underline'></div>
                 <div>
