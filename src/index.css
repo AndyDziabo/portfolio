@@ -17,6 +17,7 @@ body {
 
 .app {
   height: 100vh;
+  overflow-y: scroll;
 }
 
 .main {
@@ -743,7 +744,7 @@ section {
     top: 5vh;
     height: 95vh;
   }
-  .main {
+  .app {
     height: 90vh; 
   }
   .main h1 {
