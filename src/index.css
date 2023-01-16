@@ -751,7 +751,7 @@ nav{
     margin-bottom: 1rem;
   }
   nav{
-    min-height: 5vh;
+    height: 5vh;
   }
   #navbar {
     display: flex;
