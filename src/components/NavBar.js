@@ -32,7 +32,7 @@ function NavBar({ setTarget }){
 
     return(
         <>
-            <nav>
+            <nav className='nav'>
                 <h2 className='nav-logo' onClick={() => targetScroll('home')}>Andrew Dziabo</h2>
                 <div>
                     <ul id="navbar" className={clicked ? '#navbar' : '#navbar active'} onClick={() => setClicked(true)}>

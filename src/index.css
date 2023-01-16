@@ -8,29 +8,21 @@ html {
   scroll-behavior: smooth;
 }
 
-.nav-container {
-  position: absolute;
-  width: 100%;
-  height: 5vh;
-}
-
-.main-container {
-  position: absolute;
-  width: 100%;
-  top: 5vh;
-  height: 95vh;
-}
-
 body {
+  background-color: #38566C;
   font-family: source sans pro,Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.app {
+  height: 100vh;
+}
+
 .main {
   background-color: rgb(101, 101, 101);
-  height: 100%;
-  width: 100%;  
+  height: 95vh;
+  width: 100%; 
 }
 
 .main h1 {
@@ -47,10 +39,6 @@ body {
   height: 5px;
   margin: 0 auto;
   margin-bottom: 2rem;
-}
-
-.main-container {
-  display: flex;
 }
 
 section {
@@ -99,12 +87,12 @@ section {
 /* Nav Bar styles                                                           */
 /****************************************************************************/
 
-nav{
+.nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #38566C;
-  height: 100%;
+  height: 5vh;
   color: white;
   z-index: 4;
 }
@@ -748,8 +736,15 @@ nav{
   section {
     padding-top: 0.5rem;
   }
+  .nav-container {
+    height: 5vh;
+  }
+  .main-container {
+    top: 5vh;
+    height: 95vh;
+  }
   .main {
-    height: 95vh; 
+    height: 90vh; 
   }
   .main h1 {
     font-size: 1.25rem;
@@ -763,9 +758,9 @@ nav{
     margin: 0 auto;
     margin-bottom: 1rem;
   }
-  nav{
+  /* nav{
     height: 5vh;
-  }
+  } */
   #navbar {
     display: flex;
     flex-direction: column;
