@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: -webkit-fill-available;
 }
 
 body {
@@ -13,11 +14,12 @@ body {
   font-family: source sans pro,Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: -webkit-fill-available;
 }
 
 .app {
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  height: -webkit-fill-available;
 }
 
 .main {
@@ -743,9 +745,6 @@ section {
   .main-container {
     top: 5vh;
     height: 95vh;
-  }
-  .app {
-    height: 90vh; 
   }
   .main h1 {
     font-size: 1.25rem;

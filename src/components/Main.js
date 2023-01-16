@@ -43,7 +43,6 @@ function Main({ target }){
     const projects = useRef(null);
     const contact = useRef(null);
 
-    console.log(target)
 
     if(target === 'about') {
         about.current.scrollIntoView({behavior: "smooth"});
