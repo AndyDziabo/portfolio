@@ -45,7 +45,7 @@ body {
 }
 
 section {
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 
 .hide {
@@ -748,9 +748,9 @@ section {
 /****************************************************************************/
 
 @media screen and (max-width:769px) {
-  section {
+  /* section {
     padding-top: 0.5rem;
-  }
+  } */
   .nav-container {
     height: 5vh;
   }
