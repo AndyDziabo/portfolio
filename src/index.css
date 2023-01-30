@@ -92,12 +92,17 @@ section {
 
 .nav{
   display: flex;
+  position: fixed;
+  top: 0;
+    left: 0;
+  width: 100vw;
   align-items: center;
   justify-content: space-between;
   background-color: #38566C;
   height: 5vh;
   color: white;
   z-index: 4;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.21);
 }
 
 #navbar {
@@ -448,7 +453,8 @@ section {
 }
 
 .swiper-slide img {
-  border-radius: 10px;
+  border-radius: 15px;
+  padding: 5px;
   width: 400px;
   height: 400px;
 }
@@ -475,8 +481,14 @@ section {
   border-radius: 5px;
 }
 
+.demo-link a {
+  color: black;
+  text-decoration: none;
+}
+
 .demo-link:hover {
   background-color: #50C6D7;
+  cursor: pointer;
 }
 
 

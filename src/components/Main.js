@@ -188,6 +188,9 @@ function Main({ target }){
                                 <div className='demo-link' onClick={e => handleDemoClick('game')}>
                                     <h3>Demo</h3>
                                 </div>
+                                <div className='demo-link'>
+                                    <h3><a href="https://github.com/AndyDziabo/the-adventure-game" target="_blank" rel="noopener noreferrer">Code</a></h3>
+                                </div>
                             </div>
                         </div>   
                     </SwiperSlide>
@@ -209,6 +212,9 @@ function Main({ target }){
                                 </div>
                                 <div className='demo-link' onClick={e => handleDemoClick('drift')}>
                                     <h3>Demo</h3>
+                                </div>
+                                <div className='demo-link'>
+                                    <h3><a href="https://github.com/AndyDziabo/drift-world" target="_blank" rel="noopener noreferrer">Code</a></h3>
                                 </div>
                             </div>
                         </div>   
@@ -232,6 +238,12 @@ function Main({ target }){
                                 <div className='demo-link' onClick={e => handleDemoClick('football')}>
                                     <h3>Demo</h3>
                                 </div>
+                                <div className='demo-link'>
+                                    <h3><a href="https://github.com/AndyDziabo/phase-3-project-frontend" target="_blank" rel="noopener noreferrer">Front End Code</a></h3>
+                                </div>
+                                <div className='demo-link'>
+                                    <h3><a href="https://github.com/AndyDziabo/phase-3-sinatra-react-project" target="_blank" rel="noopener noreferrer">Back End Code</a></h3>
+                                </div>
                             </div>
                         </div>   
                     </SwiperSlide>
@@ -254,6 +266,9 @@ function Main({ target }){
                                 <div className='demo-link' onClick={e => handleDemoClick('flatify')}>
                                     <h3>Demo</h3>
                                 </div>
+                                <div className='demo-link'>
+                                    <h3><a href="https://github.com/AndyDziabo/flatify2" target="_blank" rel="noopener noreferrer">Code</a></h3>
+                                </div>
                             </div>
                         </div>   
                     </SwiperSlide>
@@ -274,6 +289,9 @@ function Main({ target }){
                                 </div>
                                 <div className='demo-link' onClick={e => handleDemoClick('weather')}>
                                     <h3>Demo</h3>
+                                </div>
+                                <div className='demo-link'>
+                                    <h3><a href="https://github.com/AndyDziabo/project1" target="_blank" rel="noopener noreferrer">Code</a></h3>
                                 </div>
                             </div>
                         </div>    

@@ -9,9 +9,9 @@ function Video({ title, demoObj, closeModal }) {
                 <CgCloseO className='close' onClick={closeModal} />
             </div>
             <div className='demo-img-container'>
-                {/* <video className='video' width={"90%"} height={"90%"} controls >
+                <video className='video' width={"90%"} height={"90%"} controls >
                     <source src={demoObj.vid} type="video/mp4"/>
-                </video> */}
+                </video>
             </div>
         </div>
     )
