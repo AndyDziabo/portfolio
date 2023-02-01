@@ -9,6 +9,7 @@ function App() {
     <div id='app' >
         <NavBar setTarget={setTarget} />
         <Main target={target} />
+        {/* <div className='footer'></div> */}
     </div>
   );
 }
