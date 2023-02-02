@@ -17,9 +17,10 @@ function Resume() {
             <br></br>
             <h3 className="resume-section-title">SOFTWARE ENGINEER</h3>
             <div className="resume-line"></div>
-            <p className="resume-about">Software Engineer skilled in Ruby on Rails and JavaScript based 
-                programming. Strong leadership and project management skills. 
-                Comfortable taking on large challenges and diving into the unknown.
+            <p className="resume-about">Software Engineer skilled in Ruby on Rails and JavaScript based programming. I’m the type of person that 
+                enjoys taking on new challenges and pushing myself further each time I do something. I am a very adaptable person and can work well in 
+                multiple situations, from working in a group to working solo, working with close supervision to working self supervised. I am a 
+                quick learner and can quickly get up to speed on new concepts, languages, etc.
             </p>
             <br></br>
             <h3 className="resume-section-title">TECHNICAL SKILLS</h3>
