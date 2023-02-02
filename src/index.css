@@ -107,11 +107,11 @@ section {
   width: 100vw;
   align-items: center;
   justify-content: space-between;
-  background-color: #38566C;
+  background-color: #516b76;
   height: 5vh;
   color: white;
   z-index: 4;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.21);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.308);
 }
 
 #navbar {
@@ -144,12 +144,12 @@ section {
 }
 
 .nav-logo:hover {
-  color: #50C6D7;
+  color: #64eaff;
   cursor: pointer;
 }
 
 .nav-item:hover{
-  color: #50C6D7;
+  color: #64eaff;
   cursor: pointer;
 }
 
@@ -157,7 +157,7 @@ section {
   content: "";
   width: 30%;
   height: 2px;
-  background-color: #50C6D7;
+  background-color: #64eaff;
   position: absolute;
   bottom: -4px;
   left: 20px;
@@ -440,7 +440,7 @@ section {
 /****************************************************************************/
 
 #projects {
-  background-color: rgb(101, 101, 101);
+  background-color: #656565;
   min-height: 85vh;
 }
 
@@ -470,6 +470,8 @@ section {
 
 .swiper-text {
   padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .swiper-text h3 {
