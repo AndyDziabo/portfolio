@@ -25,7 +25,8 @@ function Resume() {
             <br></br>
             <h3 className="resume-section-title">TECHNICAL SKILLS</h3>
             <div className="resume-line"></div>
-            <div className="resume-skills">Ruby, Rails, SQL, JavaScript, React, Redux, Linux ( Ubuntu ), GitHub,  Adobe Photoshop, Adobe Freehand</div>
+            <div className="resume-skills">Ruby on Rails, SQL, PostgreSQL, Active Record, JavaScript, HTML, CSS, React, Redux, RESTful API, 
+                Linux ( Ubuntu ), GitHub, VSCode, Adobe Photoshop, Adobe Freehand</div>
             <br></br>
             <h3 className="resume-section-title">TECHNICAL PROJECTS</h3>
             <div className="resume-line"></div>
