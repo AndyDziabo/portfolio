@@ -30,7 +30,8 @@ body {
 }
 
 .main h1 {
-  font-size: 3.25rem;
+  font-size: 3rem;
+  font-weight: 100;
   font-family: monospace;
   width: fit-content;
   margin: 0 auto;
@@ -129,7 +130,8 @@ section {
 .nav-item {
   text-decoration: none;
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 100;
+  letter-spacing: .1em;
   color: white;
   transition: 0.2s ease-in-out;
 }
@@ -137,7 +139,8 @@ section {
 .nav-logo {
   text-decoration: none;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 100;
+  letter-spacing: .1em;
   color: white;
   padding-left: 10px;
   transition: 0.2s ease-in-out;
