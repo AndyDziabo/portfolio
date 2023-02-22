@@ -448,7 +448,7 @@ section {
 }
 
 .swiper {
-  width: 70vw;
+  width: 80vw;
   min-height: 25vw;
   margin-top: 2rem;
 }
@@ -469,10 +469,12 @@ section {
   padding: 5px;
   width: 400px;
   height: 400px;
+  margin-left: 3rem;
 }
 
 .swiper-text {
-  padding: 0.5rem;
+  /* background-color: #50C6D7; */
+  margin: 0.5rem 3rem 0.5rem 0.5rem;
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -918,17 +920,19 @@ section {
     width: 100%;
   }
   .swiper {
-    width: 80vw;
+    width: 90vw;
     margin-top: 0rem;
   }
   .swiper-slide img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin: 0 auto;
   }
   .swiper-text {
     padding: 0.1rem;
     font-size: 0.9rem;
+    font-weight: 100;
+    margin: 0.5rem 2.3rem 0.5rem 2.3rem;
   }
   .swiper-description-container {
     flex-direction: column;

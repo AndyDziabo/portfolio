@@ -21,9 +21,9 @@ import DemoVideos from './DemoVideos';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/effect-cube";
-import "swiper/css/navigation";
+// import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { EffectCube, Pagination } from 'swiper';
+import { EffectCube, Pagination, Navigation } from 'swiper';
 
 import Contact from './Contact';
 import Demo from './Demo';
@@ -151,6 +151,7 @@ function Main({ target }){
                 <Swiper
                     effect={"cube"}
                     grabCursor={true}
+                    navigation={true}
                     cubeEffect={{
                         shadow: true,
                         slideShadows: true,
@@ -160,13 +161,14 @@ function Main({ target }){
                     pagination={{
                     clickable: true,
                     }}
-                    modules={[EffectCube, Pagination]}
+                    modules={[EffectCube, Pagination, Navigation]}
                     className="mySwiper"
                     style={{
                         "--swiper-pagination-color": "#294466",
                         "--swiper-pagination-bullet-inactive-color": "#999999",
                         "--swiper-pagination-bullet-inactive-opacity": "0.4",
-                        "--swiper-pagination-bullet-size": "16px"
+                        "--swiper-pagination-bullet-size": "16px",
+                        "--swiper-navigation-color": "#294466"
                     }}
                 >
                     <SwiperSlide>
